@@ -1,0 +1,3 @@
+Model,Accuracy,Model File
+Deep Learning Neural Network,0.9703196287155151,C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance Prediction System\gpdp_performance_model.h5
+Random Forest,0.9840182648401826,C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance Prediction System\gpdp_random_forest_model.pkl

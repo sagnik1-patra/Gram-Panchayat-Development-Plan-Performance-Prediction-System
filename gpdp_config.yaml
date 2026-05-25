@@ -1,0 +1,88 @@
+dataset:
+  categorical_features:
+  - stateName
+  - districtName
+  - finYear
+  features:
+  - stateCode
+  - stateName
+  - districtCode
+  - districtName
+  - finYear
+  - totalGP
+  - sabhaHeld
+  - gpdpApproved
+  - gpdpUpload
+  - updated_year
+  - updated_month
+  - updated_day
+  - sabha_ratio
+  - approval_ratio
+  - upload_ratio
+  numeric_features:
+  - stateCode
+  - districtCode
+  - totalGP
+  - sabhaHeld
+  - gpdpApproved
+  - gpdpUpload
+  - updated_year
+  - updated_month
+  - updated_day
+  - sabha_ratio
+  - approval_ratio
+  - upload_ratio
+  path: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance Prediction
+    System\37ca30d3-ea8c-48a5-a5dc-50ec5f46edd5.csv
+  target_column: performance_category
+models:
+  deep_learning:
+    batch_size: 16
+    epochs: 100
+    layers:
+    - Dense 128 ReLU
+    - Dropout 0.3
+    - Dense 64 ReLU
+    - Dropout 0.2
+    - Dense 32 ReLU
+    - Dense Softmax
+    loss: sparse_categorical_crossentropy
+    optimizer: adam
+    type: Keras Sequential Neural Network
+  machine_learning:
+    best_accuracy: 0.9863013698630136
+    best_model: Logistic Regression
+    models_used:
+    - Random Forest
+    - Logistic Regression
+    - SVM
+outputs:
+  accuracy_graph: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\gpdp_accuracy_graph.png
+  comparison_graph: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\gpdp_comparison_graph.png
+  h5_model: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\gpdp_model.h5
+  heatmap: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\gpdp_heatmap.png
+  json_results: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\gpdp_results.json
+  label_encoder: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\gpdp_label_encoder.pkl
+  pkl_model: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\gpdp_random_forest_model.pkl
+  prediction_csv: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\gpdp_prediction.csv
+  prediction_graph: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\gpdp_prediction_graph.png
+  preprocessor: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\gpdp_preprocessor.pkl
+  result_csv: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\gpdp_result.csv
+  result_graph: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\gpdp_result_graph.png
+project:
+  author: Sagnik Patra
+  description: Predicts Gram Panchayat Development Plan performance category using
+    machine learning and deep learning.
+  name: Gram Panchayat Development Plan Performance Prediction System
