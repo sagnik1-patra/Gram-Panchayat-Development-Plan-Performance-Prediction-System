@@ -1,0 +1,195 @@
+{
+    "project_name": "Gram Panchayat Development Plan Performance Prediction System",
+    "author": "Sagnik Patra",
+    "algorithm": "Genetic Algorithm",
+    "prefix": "ga_",
+    "dataset_path": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\37ca30d3-ea8c-48a5-a5dc-50ec5f46edd5.csv",
+    "output_directory": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System",
+    "dataset_shape": {
+        "rows": 2190,
+        "columns": 18
+    },
+    "target_column": "performance_category",
+    "target_classes": [
+        "High",
+        "Low",
+        "Medium"
+    ],
+    "original_features": [
+        "stateCode",
+        "stateName",
+        "districtCode",
+        "districtName",
+        "finYear",
+        "totalGP",
+        "sabhaHeld",
+        "gpdpApproved",
+        "gpdpUpload",
+        "updated_year",
+        "updated_month",
+        "updated_day",
+        "sabha_ratio",
+        "approval_ratio",
+        "upload_ratio"
+    ],
+    "ga_feature_selection": {
+        "total_processed_features": 804,
+        "selected_features": 388,
+        "best_fitness": 0.9951741293532338,
+        "fitness_history": [
+            0.9858924555305664,
+            0.9884118789613575,
+            0.9884118789613575,
+            0.9903840387105568,
+            0.9903840387105568,
+            0.9903840387105568,
+            0.9903840387105568,
+            0.9905208546309547,
+            0.9929158999522933,
+            0.9929158999522933,
+            0.995136815920398,
+            0.9951616915422885,
+            0.9951616915422885,
+            0.9951616915422885,
+            0.9951616915422885,
+            0.9951616915422885,
+            0.9951616915422885,
+            0.9951616915422885,
+            0.9951741293532338,
+            0.9951741293532338
+        ],
+        "feature_mask_path": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\ga_feature_mask.pkl",
+        "population_size": 20,
+        "generations": 20,
+        "crossover_rate": 0.8,
+        "mutation_rate": 0.02,
+        "elite_count": 2,
+        "tournament_size": 3
+    },
+    "best_model": {
+        "model_name": "GA Random Forest",
+        "accuracy": 1.0,
+        "classification_report": {
+            "High": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 268.0
+            },
+            "Low": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 68.0
+            },
+            "Medium": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 102.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 438.0
+            },
+            "weighted avg": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 438.0
+            }
+        },
+        "confusion_matrix": [
+            [
+                268,
+                0,
+                0
+            ],
+            [
+                0,
+                68,
+                0
+            ],
+            [
+                0,
+                0,
+                102
+            ]
+        ]
+    },
+    "deep_learning_model": {
+        "accuracy": 0.9885844588279724,
+        "loss": 0.0248262956738472,
+        "classification_report": {
+            "High": {
+                "precision": 0.9925925925925926,
+                "recall": 1.0,
+                "f1-score": 0.9962825278810409,
+                "support": 268.0
+            },
+            "Low": {
+                "precision": 0.9710144927536232,
+                "recall": 0.9852941176470589,
+                "f1-score": 0.9781021897810219,
+                "support": 68.0
+            },
+            "Medium": {
+                "precision": 0.98989898989899,
+                "recall": 0.9607843137254902,
+                "f1-score": 0.9751243781094527,
+                "support": 102.0
+            },
+            "accuracy": 0.9885844748858448,
+            "macro avg": {
+                "precision": 0.9845020250817352,
+                "recall": 0.9820261437908497,
+                "f1-score": 0.9831696985905052,
+                "support": 438.0
+            },
+            "weighted avg": {
+                "precision": 0.9886152906204525,
+                "recall": 0.9885844748858448,
+                "f1-score": 0.9885327692794353,
+                "support": 438.0
+            }
+        }
+    },
+    "all_model_results": [
+        {
+            "Model": "GA Random Forest",
+            "Accuracy": 1.0
+        },
+        {
+            "Model": "GA Logistic Regression",
+            "Accuracy": 0.9908675799086758
+        },
+        {
+            "Model": "GA SVM",
+            "Accuracy": 0.9885844748858448
+        },
+        {
+            "Model": "GA Deep Learning",
+            "Accuracy": 0.9885844588279724
+        }
+    ],
+    "saved_files": {
+        "h5_model": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\ga_model.h5",
+        "pkl_model": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\ga_model.pkl",
+        "preprocessor": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\ga_preprocessor.pkl",
+        "label_encoder": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\ga_label_encoder.pkl",
+        "feature_mask": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\ga_feature_mask.pkl",
+        "yaml_config": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\ga_config.yaml",
+        "json_results": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\ga_results.json",
+        "result_csv": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\ga_result.csv",
+        "prediction_csv": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\ga_prediction.csv",
+        "accuracy_graph": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\ga_accuracy_graph.png",
+        "heatmap": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\ga_heatmap.png",
+        "comparison_graph": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\ga_comparison_graph.png",
+        "result_graph": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\ga_result_graph.png",
+        "prediction_graph": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\ga_prediction_graph.png",
+        "optimization_graph": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\ga_optimization_graph.png"
+    }
+}

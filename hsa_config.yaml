@@ -1,0 +1,106 @@
+algorithm:
+  alpha: 0.9
+  best_fitness: 0.9907944864717508
+  frequency_max: 2.0
+  frequency_min: 0.0
+  gamma: 0.9
+  iterations: 20
+  loudness: 0.5
+  name: Bat Algorithm
+  note: Output files use hsa_ prefix as requested.
+  population_size: 20
+  prefix_used: hsa_
+  pulse_rate: 0.5
+  purpose: Feature Selection
+  selected_features: 373
+  short_name: BA
+  total_processed_features: 804
+  type: Bio-Inspired Optimization
+dataset:
+  categorical_features:
+  - stateName
+  - districtName
+  - finYear
+  numeric_features:
+  - stateCode
+  - districtCode
+  - totalGP
+  - sabhaHeld
+  - gpdpApproved
+  - gpdpUpload
+  - updated_year
+  - updated_month
+  - updated_day
+  - sabha_ratio
+  - approval_ratio
+  - upload_ratio
+  original_features:
+  - stateCode
+  - stateName
+  - districtCode
+  - districtName
+  - finYear
+  - totalGP
+  - sabhaHeld
+  - gpdpApproved
+  - gpdpUpload
+  - updated_year
+  - updated_month
+  - updated_day
+  - sabha_ratio
+  - approval_ratio
+  - upload_ratio
+  path: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance Prediction
+    System\37ca30d3-ea8c-48a5-a5dc-50ec5f46edd5.csv
+  target_column: performance_category
+models:
+  best_ml_accuracy: 0.9954337899543378
+  best_ml_model: BA Random Forest
+  deep_learning:
+    accuracy: 0.9840182662010193
+    batch_size: 16
+    epochs: 100
+    loss: 0.03271065279841423
+    loss_function: sparse_categorical_crossentropy
+    optimizer: adam
+    type: Keras Sequential Neural Network
+  machine_learning_models:
+  - BA Random Forest
+  - BA Logistic Regression
+  - BA SVM
+  overall_best_accuracy: 0.9954337899543378
+  overall_best_model: BA Random Forest
+outputs:
+  accuracy_graph: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\hsa_accuracy_graph.png
+  comparison_graph: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\hsa_comparison_graph.png
+  feature_mask: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\hsa_feature_mask.pkl
+  h5_model: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\hsa_model.h5
+  heatmap: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\hsa_heatmap.png
+  json_results: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\hsa_results.json
+  label_encoder: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\hsa_label_encoder.pkl
+  optimization_graph: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\hsa_optimization_graph.png
+  pkl_model: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\hsa_model.pkl
+  prediction_csv: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\hsa_prediction.csv
+  prediction_graph: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\hsa_prediction_graph.png
+  preprocessor: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\hsa_preprocessor.pkl
+  result_csv: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\hsa_result.csv
+  result_graph: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\hsa_result_graph.png
+project:
+  author: Sagnik Patra
+  description: Predicts GPDP performance category using BA-based feature selection,
+    ML, and deep learning.
+  name: Gram Panchayat Development Plan Performance Prediction System

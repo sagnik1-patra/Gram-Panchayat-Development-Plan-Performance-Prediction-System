@@ -1,0 +1,5 @@
+Model,Accuracy
+GA Random Forest,1.0
+GA Logistic Regression,0.9908675799086758
+GA SVM,0.9885844748858448
+GA Deep Learning,0.9885844588279724
