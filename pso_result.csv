@@ -1,0 +1,5 @@
+Model,Accuracy
+PSO Random Forest,1.0
+PSO Logistic Regression,0.9863013698630136
+PSO SVM,0.9863013698630136
+PSO Deep Learning,0.9863013625144958

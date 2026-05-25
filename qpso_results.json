@@ -1,0 +1,193 @@
+{
+    "project_name": "Gram Panchayat Development Plan Performance Prediction System",
+    "author": "Sagnik Patra",
+    "algorithm": "Quantum Particle Swarm Optimization",
+    "prefix": "qpso_",
+    "dataset_path": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\37ca30d3-ea8c-48a5-a5dc-50ec5f46edd5.csv",
+    "output_directory": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System",
+    "dataset_shape": {
+        "rows": 2190,
+        "columns": 18
+    },
+    "target_column": "performance_category",
+    "target_classes": [
+        "High",
+        "Low",
+        "Medium"
+    ],
+    "original_features": [
+        "stateCode",
+        "stateName",
+        "districtCode",
+        "districtName",
+        "finYear",
+        "totalGP",
+        "sabhaHeld",
+        "gpdpApproved",
+        "gpdpUpload",
+        "updated_year",
+        "updated_month",
+        "updated_day",
+        "sabha_ratio",
+        "approval_ratio",
+        "upload_ratio"
+    ],
+    "qpso_feature_selection": {
+        "total_processed_features": 804,
+        "selected_features": 380,
+        "best_fitness": 0.992990526817965,
+        "fitness_history": [
+            0.9908193620936413,
+            0.9908193620936413,
+            0.9908193620936413,
+            0.9908193620936413,
+            0.9908193620936413,
+            0.992990526817965,
+            0.992990526817965,
+            0.992990526817965,
+            0.992990526817965,
+            0.992990526817965,
+            0.992990526817965,
+            0.992990526817965,
+            0.992990526817965,
+            0.992990526817965,
+            0.992990526817965,
+            0.992990526817965,
+            0.992990526817965,
+            0.992990526817965,
+            0.992990526817965,
+            0.992990526817965
+        ],
+        "feature_mask_path": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\qpso_feature_mask.pkl",
+        "swarm_size": 20,
+        "iterations": 20,
+        "beta_start": 1.0,
+        "beta_end": 0.5
+    },
+    "best_model": {
+        "model_name": "QPSO Random Forest",
+        "accuracy": 0.9954337899543378,
+        "classification_report": {
+            "High": {
+                "precision": 0.996268656716418,
+                "recall": 0.996268656716418,
+                "f1-score": 0.996268656716418,
+                "support": 268.0
+            },
+            "Low": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 68.0
+            },
+            "Medium": {
+                "precision": 0.9901960784313726,
+                "recall": 0.9901960784313726,
+                "f1-score": 0.9901960784313726,
+                "support": 102.0
+            },
+            "accuracy": 0.9954337899543378,
+            "macro avg": {
+                "precision": 0.9954882450492635,
+                "recall": 0.9954882450492635,
+                "f1-score": 0.9954882450492635,
+                "support": 438.0
+            },
+            "weighted avg": {
+                "precision": 0.9954337899543378,
+                "recall": 0.9954337899543378,
+                "f1-score": 0.9954337899543378,
+                "support": 438.0
+            }
+        },
+        "confusion_matrix": [
+            [
+                267,
+                0,
+                1
+            ],
+            [
+                0,
+                68,
+                0
+            ],
+            [
+                1,
+                0,
+                101
+            ]
+        ]
+    },
+    "deep_learning_model": {
+        "accuracy": 0.9863013625144958,
+        "loss": 0.02959453873336315,
+        "classification_report": {
+            "High": {
+                "precision": 0.9888888888888889,
+                "recall": 0.996268656716418,
+                "f1-score": 0.9925650557620818,
+                "support": 268.0
+            },
+            "Low": {
+                "precision": 0.9714285714285714,
+                "recall": 1.0,
+                "f1-score": 0.9855072463768116,
+                "support": 68.0
+            },
+            "Medium": {
+                "precision": 0.9897959183673469,
+                "recall": 0.9509803921568627,
+                "f1-score": 0.97,
+                "support": 102.0
+            },
+            "accuracy": 0.9863013698630136,
+            "macro avg": {
+                "precision": 0.9833711262282692,
+                "recall": 0.9824163496244269,
+                "f1-score": 0.9826907673796311,
+                "support": 438.0
+            },
+            "weighted avg": {
+                "precision": 0.9863893807142339,
+                "recall": 0.9863013698630136,
+                "f1-score": 0.9862144467987696,
+                "support": 438.0
+            }
+        }
+    },
+    "all_model_results": [
+        {
+            "Model": "QPSO Random Forest",
+            "Accuracy": 0.9954337899543378
+        },
+        {
+            "Model": "QPSO Logistic Regression",
+            "Accuracy": 0.9908675799086758
+        },
+        {
+            "Model": "QPSO Deep Learning",
+            "Accuracy": 0.9863013625144958
+        },
+        {
+            "Model": "QPSO SVM",
+            "Accuracy": 0.9817351598173516
+        }
+    ],
+    "saved_files": {
+        "h5_model": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\qpso_model.h5",
+        "pkl_model": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\qpso_model.pkl",
+        "preprocessor": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\qpso_preprocessor.pkl",
+        "label_encoder": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\qpso_label_encoder.pkl",
+        "feature_mask": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\qpso_feature_mask.pkl",
+        "yaml_config": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\qpso_config.yaml",
+        "json_results": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\qpso_results.json",
+        "result_csv": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\qpso_result.csv",
+        "prediction_csv": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\qpso_prediction.csv",
+        "accuracy_graph": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\qpso_accuracy_graph.png",
+        "heatmap": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\qpso_heatmap.png",
+        "comparison_graph": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\qpso_comparison_graph.png",
+        "result_graph": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\qpso_result_graph.png",
+        "prediction_graph": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\qpso_prediction_graph.png",
+        "optimization_graph": "C:\\Users\\NXTWAVE\\Downloads\\Gram Panchayat Development Plan Performance Prediction System\\qpso_optimization_graph.png"
+    }
+}
