@@ -1,6 +1,6 @@
 # 🏛️ Gram Panchayat Development Plan Performance Prediction System
 
-## 🧠 Rural Governance Performance Prediction using Machine Learning & Bio-Inspired Optimization
+## 🧠 Rural Governance Performance Prediction using Machine Learning & Bio-Inspired Optimization 
 
 ---
 
