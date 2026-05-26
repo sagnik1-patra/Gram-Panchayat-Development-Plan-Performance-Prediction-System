@@ -1,0 +1,104 @@
+algorithm:
+  best_fitness: 0.9953482587064677
+  crossover_rate: 0.8
+  elite_count: 2
+  generations: 20
+  local_search_rate: 0.4
+  local_search_steps: 5
+  mutation_rate: 0.03
+  name: Memetic Algorithm
+  population_size: 20
+  purpose: Feature Selection
+  selected_features: 374
+  short_name: MA
+  total_processed_features: 804
+  tournament_size: 3
+  type: Bio-Inspired Optimization
+dataset:
+  categorical_features:
+  - stateName
+  - districtName
+  - finYear
+  numeric_features:
+  - stateCode
+  - districtCode
+  - totalGP
+  - sabhaHeld
+  - gpdpApproved
+  - gpdpUpload
+  - updated_year
+  - updated_month
+  - updated_day
+  - sabha_ratio
+  - approval_ratio
+  - upload_ratio
+  original_features:
+  - stateCode
+  - stateName
+  - districtCode
+  - districtName
+  - finYear
+  - totalGP
+  - sabhaHeld
+  - gpdpApproved
+  - gpdpUpload
+  - updated_year
+  - updated_month
+  - updated_day
+  - sabha_ratio
+  - approval_ratio
+  - upload_ratio
+  path: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance Prediction
+    System\37ca30d3-ea8c-48a5-a5dc-50ec5f46edd5.csv
+  target_column: performance_category
+models:
+  best_ml_accuracy: 0.9954337899543378
+  best_ml_model: MA Random Forest
+  deep_learning:
+    accuracy: 0.9680365324020386
+    batch_size: 16
+    epochs: 100
+    loss: 0.06442850828170776
+    loss_function: sparse_categorical_crossentropy
+    optimizer: adam
+    type: Keras Sequential Neural Network
+  machine_learning_models:
+  - MA Random Forest
+  - MA Logistic Regression
+  - MA SVM
+  overall_best_accuracy: 0.9954337899543378
+  overall_best_model: MA Random Forest
+outputs:
+  accuracy_graph: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ma_accuracy_graph.png
+  comparison_graph: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ma_comparison_graph.png
+  feature_mask: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ma_feature_mask.pkl
+  h5_model: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ma_model.h5
+  heatmap: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ma_heatmap.png
+  json_results: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ma_results.json
+  label_encoder: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ma_label_encoder.pkl
+  optimization_graph: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ma_optimization_graph.png
+  pkl_model: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ma_model.pkl
+  prediction_csv: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ma_prediction.csv
+  prediction_graph: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ma_prediction_graph.png
+  preprocessor: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ma_preprocessor.pkl
+  result_csv: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ma_result.csv
+  result_graph: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ma_result_graph.png
+project:
+  author: Sagnik Patra
+  description: Predicts GPDP performance category using MA-based feature selection,
+    ML, and deep learning.
+  name: Gram Panchayat Development Plan Performance Prediction System
