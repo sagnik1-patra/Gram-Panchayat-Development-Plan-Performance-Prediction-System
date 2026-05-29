@@ -1,0 +1,103 @@
+algorithm:
+  best_fitness: 0.9931895317930893
+  elite_count: 4
+  iterations: 20
+  mutation_rate: 0.06
+  name: Termite Algorithm
+  pheromone_evaporation: 0.15
+  pheromone_influence: 0.7
+  population_size: 20
+  purpose: Feature Selection
+  random_walk_rate: 0.2
+  selected_features: 364
+  short_name: TA
+  total_processed_features: 804
+  type: Bio-Inspired Optimization
+dataset:
+  categorical_features:
+  - stateName
+  - districtName
+  - finYear
+  numeric_features:
+  - stateCode
+  - districtCode
+  - totalGP
+  - sabhaHeld
+  - gpdpApproved
+  - gpdpUpload
+  - updated_year
+  - updated_month
+  - updated_day
+  - sabha_ratio
+  - approval_ratio
+  - upload_ratio
+  original_features:
+  - stateCode
+  - stateName
+  - districtCode
+  - districtName
+  - finYear
+  - totalGP
+  - sabhaHeld
+  - gpdpApproved
+  - gpdpUpload
+  - updated_year
+  - updated_month
+  - updated_day
+  - sabha_ratio
+  - approval_ratio
+  - upload_ratio
+  path: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance Prediction
+    System\37ca30d3-ea8c-48a5-a5dc-50ec5f46edd5.csv
+  target_column: performance_category
+models:
+  best_ml_accuracy: 0.997716894977169
+  best_ml_model: TA Random Forest
+  deep_learning:
+    accuracy: 0.9794520735740662
+    batch_size: 16
+    epochs: 100
+    loss: 0.03589283302426338
+    loss_function: sparse_categorical_crossentropy
+    optimizer: adam
+    type: Keras Sequential Neural Network
+  machine_learning_models:
+  - TA Random Forest
+  - TA Logistic Regression
+  - TA SVM
+  overall_best_accuracy: 0.997716894977169
+  overall_best_model: TA Random Forest
+outputs:
+  accuracy_graph: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ta_accuracy_graph.png
+  comparison_graph: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ta_comparison_graph.png
+  feature_mask: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ta_feature_mask.pkl
+  h5_model: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ta_model.h5
+  heatmap: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ta_heatmap.png
+  json_results: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ta_results.json
+  label_encoder: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ta_label_encoder.pkl
+  optimization_graph: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ta_optimization_graph.png
+  pkl_model: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ta_model.pkl
+  prediction_csv: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ta_prediction.csv
+  prediction_graph: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ta_prediction_graph.png
+  preprocessor: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ta_preprocessor.pkl
+  result_csv: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ta_result.csv
+  result_graph: C:\Users\NXTWAVE\Downloads\Gram Panchayat Development Plan Performance
+    Prediction System\ta_result_graph.png
+project:
+  author: Sagnik Patra
+  description: Predicts GPDP performance category using TA-based feature selection,
+    ML, and deep learning.
+  name: Gram Panchayat Development Plan Performance Prediction System
